@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++){
+            int x=sc.nextInt();
+            int y=sc.nextInt();
+            int d=sc.nextInt();
+            System.out.println(func(x,y,d)?"YES":"NO");
+        }
+        
+    }
+    public static boolean func(int x,int y,int d){
+            return x-y <=d;
+        }
+}
