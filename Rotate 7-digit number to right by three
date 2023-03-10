@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int ln=n%1000;
+        int rm = n/1000;
+        int ans = ln*10000 +rm;
+        System.out.println(ans);
+    }
+}
