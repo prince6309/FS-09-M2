@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static boolean isequal(String n,String m){
+        if(n.length()!=m.length())
+            return false;
+        for(int i=0;i<n.length();i++){
+            if(n.charAt(i)!=m.charAt(i))
+                return false;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String n=sc.next();
+        String m=sc.next();
+        boolean ans=isequal(n,m);
+        System.out.println(ans);
+    }
+}
